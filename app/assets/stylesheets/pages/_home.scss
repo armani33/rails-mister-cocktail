@@ -1,12 +1,36 @@
 .wrapper{
   // background-color: black;
-  background-image: url('http://s1.1zoom.me/b7250/947/Drinks_Cocktail_Lime_Coast_mojito_Ice_520408_1920x1080.jpg'), linear-gradient(rgba(10, 10, 10, 0.5), rgba(10, 10, 10, 0.5));
-  height: 100vh;
+  background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 0.6)), url('https://png.pngtree.com/thumb_back/fw800/back_pic/03/75/00/4257bd154f768d4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .flex_container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  position: relative;
+}
+#new-button{
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  background-color: rgb(233.0, 101.0, 194.0);
+  padding: 20px;
+  border-radius: 25px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+}
+.cocktail_container{
+  background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 0.6)), url('https://ak1.picdn.net/shutterstock/videos/17029351/thumb/1.jpg');
+  width: 80vh;
+  height: 70vh;
+  padding: 30px 60px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(200,200,200,1);
+  color: white;
+  text-align: center;
 }
 

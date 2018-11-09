@@ -1,12 +1,15 @@
+<%= link_to('New Cocktail', new_cocktail_path, {id: "new-button"}) %>
 <div class="cocktail_container">
-  <%= link_to('New Cocktail', new_cocktail_path) %>
+  <h1>Our Cocktails</h1>
   <div class="cards">
-    <h1>Our Cocktails</h1>
     <% @cocktails.each do |cocktail| %>
+
+    <%= link_to cocktail_path(cocktail) do  %>
     <div class="card">
       <%= cocktail.name %>
-      <%= link_to('More info', cocktail_path(cocktail)) %>
     </div>
+    <% end %>
+
     <% end %>
   </div>
 </div>

@@ -1,0 +1,26 @@
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height:490px;
+  overflow:auto;
+}
+.card{
+  background-color: rgb(124.0, 232.0, 248.0);
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 0 5px white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: bold;
+  text-decoration: none;
+}
+.card:hover {
+  text-decoration: none;
+  background-color: rgb(124.0, 202.0, 248.0);
+}
