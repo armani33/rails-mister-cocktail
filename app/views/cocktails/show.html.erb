@@ -1,2 +1,16 @@
-<h1>Cocktails#show</h1>
-<p>Find me in app/views/cocktails/show.html.erb</p>
+<div class="card_show">
+  <%= link_to('Back to all Cocktail', cocktails_path) %>
+  <h2><%= @cocktail.name %></h2>
+
+  <%= render 'doses/new', cocktail: @cocktail, dose: @dose %>
+
+  <div class="card_dose">
+    <% @cocktail.doses.each do |dose| %>
+      <div class="card_ingredient">
+       <p><%= dose.ingredient.name%></p>
+       <p><strong><%= dose.description %></strong></p>
+      </div>
+    <% end %>
+  </div>
+
+</div>
